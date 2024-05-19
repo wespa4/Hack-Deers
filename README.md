@@ -55,11 +55,11 @@ python ./controller.py
 
 ## <a name="5">Стек </a>
 <div align="center">
-  <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original-wordmark.svg" title="Python" alt="Python" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/pytorch/pytorch-original.svg" title="Pytorch" alt="Pytorch" height="40"/>&nbsp;
-  <img src="https://pjreddie.com/media/image/yologo_2.png" title="Yolo" alt="Yolo" height="40"/>&nbsp;
-  <img src="https://w7.pngwing.com/pngs/794/1022/png-transparent-qt-creator-qt-quick-the-qt-company-posted-write-text-trademark-rectangle.png" title="pyQT" alt="pyQT" height="40"/>&nbsp;
-  <img src="https://seaborn.pydata.org/_images/logo-tall-lightbg.svg" title="seaborn" alt="seaborn" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original-wordmark.svg" title="Python" alt="Python" height="50"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/pytorch/pytorch-original.svg" title="Pytorch" alt="Pytorch" height="50"/>&nbsp;
+  <img src="https://pjreddie.com/media/image/yologo_2.png" title="Yolo" alt="Yolo" height="50"/>&nbsp;
+  <img src="https://w7.pngwing.com/pngs/794/1022/png-transparent-qt-creator-qt-quick-the-qt-company-posted-write-text-trademark-rectangle.png" title="pyQT" alt="pyQT" height="50"/>&nbsp;
+  <img src="https://seaborn.pydata.org/_images/logo-tall-lightbg.svg" title="seaborn" alt="seaborn" height="50"/>&nbsp;
 
 </div>
 
