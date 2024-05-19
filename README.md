@@ -26,13 +26,7 @@
 
 <div align="center">
 <img height="500" alt="logo" src="assets/solution.png">
-
-**Развертывание модели**
 </div> 
-
-### Архетиктура модели
-
-<div align="center"><img height="300" alt="модель" src="assets/model.png"></div>
 
 ## <a name="3">Запуск кода </a>
 
@@ -55,15 +49,10 @@ python ./controller.py
 
 ## <a name="4">Уникальность нашего решения </a>
 
-1. Быстрая обработка видео за счет обработки наиболее информативных кадров
+1. ...
 
-2. Возможность обработки в режиме реального времени с применением более быстрой модели
+2. ...
 
-3. Использование докера для упрощения развертывания 
-
-4. Автогенерация отчета в формате excel таблицы при обработке статического видео
-
-5. Rest API для легкой интеграции в любую систему
 
 ## <a name="5">Стек </a>
 <div align="center">
@@ -90,5 +79,5 @@ python ./controller.py
 
 ## <a name="7">Ссылки </a>
 
-- [ссылка на веса модели детекции](https://drive.google.com/drive/folders/1PoQqqHhpZxaRjLQRwCxJ7xmoGyvGAyt3?usp=sharing)&nbsp;
-- [ссылка на скринкаст](https://drive.google.com/drive/folders/1BwoBICXg2sa_pRCZ6IFFrk211rVWjvbB?usp=sharing)&nbsp;
+- [ссылка на веса модели](https://drive.google.com/drive/folders/1eHfXdKvqGrvHjaF_1w_-Fe3VZPdsrof-?usp=sharing)&nbsp;
+- [ссылка на скринкаст](https://drive.google.com/drive/folders/11BADEqlWaA762Ez33jA7ERvHQEqYgAvE?usp=sharing)&nbsp;
