@@ -59,7 +59,7 @@ pip install -r ./requirements.txt
 ```Bash
  C:\Users\ ИМЯ_ПОЛЬЗОВАТЕЛЯ \AppData\Local\Programs\Python\Python310 ИЛИ_ДРУГАЯ_ВЕРСИЯ \Lib\site-packages\PyQt5\Qt5\plugins\platforms
 ``` 
-   Посе этого повторите пункт 4.
+   Посе этого вернитесь в папку репозитория и повторите пункт 4.
 
 
 ## <a name="4">Уникальность нашего решения </a>
