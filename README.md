@@ -46,7 +46,7 @@ pip install -r ./requirements.txt
 4. Для запуска интерфейса введите команду:
 ```Bash
  "путь до python.exe" ./controller.py
-  Пример: C:/Users/Ivan/AppData/Local/Programs/Python/Python310/python.exe ./controller.py
+  Пример: C:/Users/Имя_пользователя/AppData/Local/Programs/Python/Python310/python.exe ./controller.py
 ```
 
 ## <a name="4">Уникальность нашего решения </a>
