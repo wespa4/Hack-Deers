@@ -10,6 +10,8 @@ import matplotlib.pyplot as plt
 from ultralytics import RTDETR,YOLO
 import shutil
 import seaborn as sns
+import os
+os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 
 path = "./_internal/"
 path = ""
@@ -67,6 +69,7 @@ class App(QMainWindow):
             #time.sleep(0.1)
             #модель
             yres = self.YoloClassification(path = path)
+            print(yres)
             self.ratio[int(yres)] += 1 
             fin_dict[path] = self.animalsDict[yres]
             #логика после модели
@@ -88,17 +91,6 @@ class App(QMainWindow):
             
         shutil.make_archive(self.folder_name, 'zip', folder_name)
         shutil.rmtree(folder_name)
-
-
-    
-
-    
-    
-        
-
-
-
-
 
     def createFolderForClasses(self,f_dict,all_classes):
         #создание папок
@@ -174,7 +166,7 @@ class App(QMainWindow):
             files = os.listdir(directory)
             
             self.info.setText("Такая папка есть")
-            files = [file for file in files if file.endswith(".png") or file.endswith(".jpeg") or file.endswith(".jpg")]
+            files = [file for file in files if file.endswith(".png") or file.endswith(".jpeg") or file.endswith(".jpg") or file.endswith(".JPG")]
 
             self.listFiles = files
 
