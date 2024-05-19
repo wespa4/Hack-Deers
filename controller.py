@@ -1,7 +1,6 @@
 import datetime
 import os
 import sys
-from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog
 from PyQt5.QtGui import QPixmap
 from PyQt5 import uic
@@ -10,6 +9,7 @@ from ultralytics import YOLO
 import shutil
 import seaborn as sns
 import os
+import torch
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 
 path = "./_internal/"
@@ -142,6 +142,8 @@ class App(QMainWindow):
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     model = YOLO(path+'yolov9e_20ep_1024sz_v6.pt')
+    if torch.cuda.is_available():
+        model.to('cuda')
     try:
         ex = App(model=model)
         ex.show()

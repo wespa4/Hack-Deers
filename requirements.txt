@@ -2,3 +2,4 @@ PyQt5
 matplotlib
 ultralytics
 seaborn
+torch
