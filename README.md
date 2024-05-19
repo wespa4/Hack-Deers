@@ -39,25 +39,19 @@
 ### Последовательные шаги для запуска кода:
 1. Склонируйте гит репозиторий;
 ```Bash
-git clone https://github.com/Skadar7/Waste-detection.git
+git clone https://github.com/wespa4/Hack-Deers.git
 ```
-2. Скачайте веса для модели детекции https://drive.google.com/drive/folders/1PoQqqHhpZxaRjLQRwCxJ7xmoGyvGAyt3?usp=sharing. В ```pyClient/weights``` должны находится веса модели для статичного режима работы (рекомендовано **detr-x-10ep-3v.pt**), а в ```modelStream/weights``` – для работы в прямом эфире (рекомендовано **yolo8s_30ep.pt**).
+2. Скачайте веса для модели детекции https://drive.google.com/drive/folders/1eHfXdKvqGrvHjaF_1w_-Fe3VZPdsrof-?usp=sharing. Переместите веса в папку репозитория.
 
-3. Развертывание программы:
+3. Установите необходимые пакеты:
 ```Bash
-cd Waste-detection
-docker-compose build
-docker-compose up
+pip install requirements.txt
 ```
 
-4. Для доступа к сайту необходимо перейти по ссылке http://localhost:4000
-
-### Запуск инференса
-```bash
-cd pyClient
-python3 inference.py -v {path_to_video} -hd {path_to_weights}
+4. Для запуска интерфейса введите команду:
+```Bash
+python ./controller.py
 ```
-где path_to_video – путь к видео, path_to_weights – путь к весам модели
 
 ## <a name="4">Уникальность нашего решения </a>
 
