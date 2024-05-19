@@ -66,7 +66,6 @@ python ./controller.py
 </div>
 
 ## <a name="6">Команда </a>
--
 *Состав команды "Герои МЛ и Магии"*
 
 - <h4><img align="center" height="25" src="https://user-images.githubusercontent.com/51875349/198863127-837491f2-b57f-4c75-9840-6a4b01236c7a.png">: @Ubludor, Маслов Денис - Fullstack-developer</h3>
