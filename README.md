@@ -39,7 +39,7 @@ git clone https://github.com/wespa4/Hack-Deers.git
 
 3. Установите необходимые пакеты:
 ```Bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 4. Для запуска интерфейса введите команду:
