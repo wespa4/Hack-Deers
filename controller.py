@@ -96,15 +96,47 @@ class App(QMainWindow):
         names = self.model.names
         result_names = None
 
-        for i, res in enumerate(results):
+        result_names = {}
+        for _, res in enumerate(results):
             boxes = res.boxes.cpu().numpy()
             for box in boxes:
-                result_names = names[int(box.cls)] 
-                break
-        if result_names:
-            return result_names
-        else:
-            return result_names
+                if names[int(box.cls)] not in result_names:
+                    result_names[names[int(box.cls)]] = [box.conf[0]]
+                else:
+                    result_names[names[int(box.cls)]].append(box.conf[0])
+            # Структура {Класс: [conf/conf, conf...]}
+            # Если есть хотя бы что-то
+            if result_names.keys():
+                # Вытягиевам все объекты в 1 массив
+                all_values = []
+                for value in result_names.values():
+                    all_values.extend(value)
+                max_conf = max(all_values)
+                # Если всего 1 объект
+                if len(all_values) == 1:
+                    return list(result_names.keys())[0]
+                # Если объектов от 2 до 5
+                elif 1 < len(all_values) < 5:
+                    # Проходимся по всем классам
+                    for i in result_names.keys():
+                        # Если макс conf в этом классе, то записываем его
+                        if max_conf in result_names[i]:
+                            return i
+                else:
+                    # Если объектов больше 5
+                    # Если есть олень и его conf > 0.35, то олень
+                    if '2' in list(result_names.keys()) and max(result_names['2']) > 0.35:
+                        return 2
+                    else:
+                        # Если оленя нет
+                        # Проходимся по всем классам
+                        for i in result_names.keys():
+                            # Если макс conf в этом классе, то записываем его
+                            if max_conf in result_names[i]:
+                                return i
+            else:
+                # Если ничего не нашел записываем косулю
+                return 1
 
 
     def showGistagramma(self):

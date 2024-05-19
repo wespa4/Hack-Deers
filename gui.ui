@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>853</width>
-    <height>564</height>
+    <width>700</width>
+    <height>500</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -34,7 +34,7 @@ color: black;</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../Downloads/Министерство_природных_ресурсов_и_экологии_Российской_Федерации__Минприроды_России_-removebg-preview.png</pixmap>
+       <pixmap>../Downloads/Министерство_природных_ресурсов_и_экологии_Российской_Федерации_(Минприроды_России).png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -55,7 +55,9 @@ color: black;</string>
 padding:5px;
 border: 1px solid #DCDCDC;
 min-height: 25px;
-margin-top: 20px
+margin-top: 20px;
+margin-left: 20px
+
 </string>
           </property>
           <property name="text">
@@ -71,7 +73,9 @@ padding: 7px;
 border-radius: 4px;
 min-width: 120px;
 min-height: 25px;
-margin-top: 20px</string>
+margin-top: 20px;
+font-size: 20px;
+margin-right: 20px</string>
           </property>
           <property name="text">
            <string>Выбрать источник</string>
@@ -120,6 +124,10 @@ margin-top: 20px</string>
           <height>25</height>
          </size>
         </property>
+        <property name="styleSheet">
+         <string notr="true">font-size: 20px;
+margin-left: 20px</string>
+        </property>
         <property name="text">
          <string>Получить график распределения</string>
         </property>
@@ -136,7 +144,7 @@ margin-top: 20px</string>
         <property name="minimumSize">
          <size>
           <width>154</width>
-          <height>69</height>
+          <height>79</height>
          </size>
         </property>
         <property name="maximumSize">
@@ -158,8 +166,10 @@ border-radius: 4px;
 min-width: 140px;
 min-height: 25px;
 margin-bottom: 30px;
+margin-top: 10px;
 color: white;
-font-size: 16px;
+font-size: 20px;
+
 </string>
         </property>
         <property name="text">
@@ -179,6 +189,24 @@ font-size: 16px;
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
        <layout class="QGridLayout" name="gridLayout_2">
+        <item row="1" column="0">
+         <widget class="QLCDNumber" name="All">
+          <property name="maximumSize">
+           <size>
+            <width>240</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">min-height: 45px;
+max-height::65px;
+height: 40px;
+min-width: 140px;
+max-width::300px;
+margin-left: 20px</string>
+          </property>
+         </widget>
+        </item>
         <item row="0" column="0">
          <widget class="QLabel" name="label_8">
           <property name="maximumSize">
@@ -195,7 +223,8 @@ max-height::65px;
 height: 40px;
 min-width: 140px;
 max-width::300px;
-font-size: 15px;
+font-size: 20px;
+margin-left: 20px
 </string>
           </property>
           <property name="text">
@@ -203,34 +232,63 @@ font-size: 15px;
           </property>
          </widget>
         </item>
-        <item row="1" column="0">
-         <widget class="QLCDNumber" name="All">
-          <property name="maximumSize">
-           <size>
-            <width>240</width>
-            <height>100</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">min-height: 45px;
-max-height::65px;
-height: 40px;
-min-width: 140px;
-max-width::300px;</string>
-          </property>
-         </widget>
-        </item>
        </layout>
       </item>
       <item>
        <layout class="QGridLayout" name="gridLayout">
-        <item row="2" column="1">
-         <widget class="QLCDNumber" name="Kos">
+        <item row="1" column="0">
+         <widget class="QLabel" name="l_Kab">
           <property name="maximumSize">
            <size>
             <width>240</width>
-            <height>100</height>
+            <height>60</height>
            </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border: 1px solid #DCDCDC;
+padding: 0 5px 0 5px;
+font-size: 20px;</string>
+          </property>
+          <property name="text">
+           <string>Кабарга</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLCDNumber" name="Ole">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>240</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLCDNumber" name="Kos">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>240</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
           </property>
          </widget>
         </item>
@@ -260,37 +318,11 @@ max-width::300px;</string>
           </property>
           <property name="styleSheet">
            <string notr="true">border: 1px solid #DCDCDC;
-padding: 0 0 0 5px;</string>
+padding: 0 0 0 5px;
+font-size: 20px;</string>
           </property>
           <property name="text">
            <string>Косуля</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="2">
-         <widget class="QLCDNumber" name="Ole">
-          <property name="maximumSize">
-           <size>
-            <width>240</width>
-            <height>100</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="0">
-         <widget class="QLabel" name="l_Kab">
-          <property name="maximumSize">
-           <size>
-            <width>240</width>
-            <height>60</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">border: 1px solid #DCDCDC;
-padding: 0 5px 0 5px;</string>
-          </property>
-          <property name="text">
-           <string>Кабарга</string>
           </property>
          </widget>
         </item>
@@ -304,7 +336,8 @@ padding: 0 5px 0 5px;</string>
           </property>
           <property name="styleSheet">
            <string notr="true">border: 1px solid #DCDCDC;
-padding: 0 0 0 5px;</string>
+padding: 0 0 0 5px;
+font-size: 20px;</string>
           </property>
           <property name="text">
            <string>Олень</string>
