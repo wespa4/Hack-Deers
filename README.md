@@ -57,13 +57,10 @@ python ./controller.py
 <div align="center">
   <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original-wordmark.svg" title="Python" alt="Python" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/pytorch/pytorch-original.svg" title="Pytorch" alt="Pytorch" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/numpy/numpy-original.svg" title="Numpy" alt="Numpy" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/opencv/opencv-original.svg" title="OpenCV" alt="OpenCV" height="40"/>&nbsp;
-  
   <img src="https://pjreddie.com/media/image/yologo_2.png" title="Yolo" alt="Yolo" height="40"/>&nbsp;
-  <img src="https://fuzeservers.ru/wp-content/uploads/4/7/b/47bf752c2f13d3f13363ea5b624bd2db.png" title="JS" alt="JS"  height="40"/>&nbsp;
-  <img src="https://fronty.com/static/uploads/1.11-30.11/languages%20in%202022/go.png" title="GO" alt="GO" height="40"/>&nbsp;
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg"  title="Flask" alt="Flask" height="40"/>
+  <img src="https://w7.pngwing.com/pngs/794/1022/png-transparent-qt-creator-qt-quick-the-qt-company-posted-write-text-trademark-rectangle.png" title="pyQT" alt="pyQT" height="40"/>&nbsp;
+  <img src="https://seaborn.pydata.org/_images/logo-tall-lightbg.svg" title="seaborn" alt="seaborn" height="40"/>&nbsp;
+
 </div>
 
 ## <a name="6">Команда </a>
