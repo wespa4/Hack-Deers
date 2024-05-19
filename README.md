@@ -31,15 +31,16 @@
 ## <a name="3">Запуск кода </a>
 
 ### Последовательные шаги для запуска кода:
-1. Склонируйте гит репозиторий;
+1. Склонируйте гит репозиторий:
 ```Bash
 git clone https://github.com/wespa4/Hack-Deers.git
+cd Hack-Deers
 ```
 2. Скачайте веса для модели детекции https://drive.google.com/drive/folders/1eHfXdKvqGrvHjaF_1w_-Fe3VZPdsrof-?usp=sharing. Переместите веса в папку репозитория.
 
 3. Установите необходимые пакеты:
 ```Bash
-pip install -r requirements.txt
+pip install -r ./requirements.txt
 ```
 
 4. Для запуска интерфейса введите команду:
