@@ -46,17 +46,18 @@ pip install -r ./requirements.txt
 4. Для запуска интерфейса введите команду:
 ```Bash
  "путь до python.exe" ./controller.py
-  Пример: C:/Users/(Имя_пользователя/AppData/Local/Programs/Python/Python310/python.exe ./controller.py
+  Пример: C:/Users/ ИМЯ_ПОЛЬЗОВАТЕЛЯ /AppData/Local/Programs/Python/Python310 ИЛИ_ДРУГАЯ_ВЕРСИЯ /python.exe ./controller.py
 ```
 
 5. Если возникли проблемы при запуске (ошибка pyQT) необходимо зажать win + R, и в открывшимся окне ввести - sysdm.cpl.
-   После, войди во вкладку Дополнительно, и снизу нажать на Переменные среды. Далее необходимо создать новую переменную, и дать ей имя: 
+   После, войти во вкладку Дополнительно, и снизу нажать на Переменные среды. Далее необходимо создать новую переменную, и дать ей 
+   имя: 
 ```Bash
  "QT_QPA_PLATFORM_PLUGIN_PATH"
 ```
-   а путь:
+   путь:
 ```Bash
- C:\Users\Имя_пользователя\AppData\Local\Programs\Python\Python310\Lib\site-packages\PyQt5\Qt5\plugins\platforms
+ C:\Users\ ИМЯ_ПОЛЬЗОВАТЕЛЯ \AppData\Local\Programs\Python\Python310 ИЛИ_ДРУГАЯ_ВЕРСИЯ \Lib\site-packages\PyQt5\Qt5\plugins\platforms
 ``` 
    Посе этого повторите пункт 4.
 
